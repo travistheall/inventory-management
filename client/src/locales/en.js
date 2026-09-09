@@ -6,6 +6,7 @@ export default {
     orders: 'Orders',
     finance: 'Finance',
     demandForecast: 'Demand Forecast',
+    restocking: 'Restocking',
     companyName: 'Catalyst Components',
     subtitle: 'Inventory Management System'
   },
@@ -126,6 +127,20 @@ export default {
       status: 'Status',
       expectedDelivery: 'Expected Delivery',
       actualDelivery: 'Actual Delivery'
+    },
+    submittedOrders: {
+      title: 'Submitted Restocking Orders',
+      empty: 'No restocking orders submitted yet.',
+      table: {
+        orderNumber: 'Order Number',
+        items: 'Items',
+        totalCost: 'Total Cost',
+        submittedDate: 'Submitted',
+        leadTime: 'Lead Time',
+        expectedDelivery: 'Expected Delivery',
+        status: 'Status'
+      },
+      days: '{count} days'
     }
   },
 
@@ -185,6 +200,32 @@ export default {
       change: 'Change',
       trend: 'Trend',
       period: 'Period'
+    }
+  },
+
+  // Restocking
+  restocking: {
+    title: 'Restocking',
+    description: 'Set a budget and get item recommendations from the demand forecast',
+    budgetLabel: 'Available Budget',
+    recommendedItems: 'Recommended Items',
+    noRecommendations: 'No items fit within this budget. Try increasing it.',
+    totalCost: 'Total Cost',
+    remainingBudget: 'Remaining Budget',
+    itemCount: '{count} items recommended',
+    placeOrder: 'Place Order',
+    placingOrder: 'Placing Order...',
+    orderPlaced: 'Order {orderNumber} placed successfully! Expected delivery in {days} days.',
+    orderFailed: 'Failed to place order. Please try again.',
+    table: {
+      sku: 'SKU',
+      itemName: 'Item Name',
+      currentDemand: 'Current Demand',
+      forecastedDemand: 'Forecasted Demand',
+      demandGap: 'Demand Gap',
+      unitCost: 'Unit Cost',
+      quantity: 'Quantity',
+      subtotal: 'Subtotal'
     }
   },
 
